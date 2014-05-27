@@ -6,16 +6,30 @@
 $(document).ready(function() {
 
     $('#addbutton').on('click', function() {
-        var s = $('#status').val();
-        var dataString = 'profileitem=' + s;
+        alert('foo');
+        var content = $('#content').val();
+        var category = $('#category').val();
+        var dataString = 'content=' + content + '&category=' + category;
         $.ajax({
             type: "POST",
-            url: "add.php",
-            data: dataString,
-        });
+            url: "index.php",
+            data: dataString
+        }).done(function(msg) {
+                alert( "success: " + msg);
+            })
+            .fail(function() {
+                alert( "error" );
+            })
+    });
+
+    $('#clear').on('click', function() {
+        $('#content').val('');
+        $('#category').val('');
     });
 });
+
 </script>
 
-<input type="text" id="status" size="50"><br>
+Content: <input type="text" id="content" size="50"> - Category: <input type="text" id="category" size="50"><br>
 <button id="addbutton">Add to profile</button><br>
+<button id="clear">Clear</button>
