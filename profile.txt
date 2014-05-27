@@ -1,5 +1,0 @@
-foo
-hellohi sam00
-hi foo
-
-this is an awesome profile. it needs some CSS though

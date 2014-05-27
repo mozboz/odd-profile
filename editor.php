@@ -6,20 +6,23 @@
 $(document).ready(function() {
 
     $('#addbutton').on('click', function() {
-        alert('foo');
         var content = $('#content').val();
         var category = $('#category').val();
-        var dataString = 'content=' + content + '&category=' + category;
-        $.ajax({
-            type: "POST",
-            url: "index.php",
-            data: dataString
-        }).done(function(msg) {
-                alert( "success: " + msg);
-            })
-            .fail(function() {
-                alert( "error" );
-            })
+        if (content=='' || category=='') {
+            alert('content and category must be filled');
+        } else {
+            var dataString = 'content=' + content + '&category=' + category;
+            $.ajax({
+                type: "POST",
+                url: "index.php",
+                data: dataString
+            }).done(function(msg) {
+                    alert( "success: " + msg);
+                })
+                .fail(function() {
+                    alert( "error" );
+                })
+        }
     });
 
     $('#clear').on('click', function() {
@@ -30,6 +33,6 @@ $(document).ready(function() {
 
 </script>
 
-Content: <input type="text" id="content" size="50"> - Category: <input type="text" id="category" size="50"><br>
+Category: <input type="text" id="category" size="50"> - Content: <input type="text" id="content" size="50"><br>
 <button id="addbutton">Add to profile</button><br>
 <button id="clear">Clear</button>

@@ -31,38 +31,22 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
     case 'POST':
 
-        $data = loadJsonProfile();
-        logMessage('started post 1');
-        if (empty($_POST['content']) && empty($_POST['category'])) {
+        if (empty($_POST['content']) || empty($_POST['category'])) {
             header('HTTP/1.1 400 Invalid Input');
             logMessage('POST Error: content field not set');
             exit(1);
         }
-        logMessage('started post 2');
-        if (!empty($_POST['category'])) {
-            if (empty($_POST['content'])) {
-                if (!isset($data[$_POST['category']])) {
-                    $data[$_POST['category']] = array();
-                    logMessage('POST: Writing new empty category');
-                } else {
-                    logMessage('POST: Can not write new empty category, already exists');
-                }
 
-            } else {
-                if (!isset($data->$_POST['category'])) {
-                    $data->$_POST['category'] = array($_POST['content']);
-                    logMessage('POST: Appended new content to new category');
-                } else {
-                    $arr = $data->$_POST['category'];
-                    $arr[] = $_POST['content'];
-                    $data->$_POST['category'] = $arr;
-                    logMessage('POST: Appended new content to existing category');
-                }
-            }
+        $data = loadJsonProfile();
+
+        if (!isset($data->$_POST['category'])) {
+            $data->$_POST['category'] = array($_POST['content']);
+            logMessage('POST: Appended new content to new category');
         } else {
-           // from above check we know that if category empty, content must be populated
-            $data[] = $_POST['content'];
-            logMessage('POST: Add new top level content');
+            $arr = $data->$_POST['category'];
+            $arr[] = $_POST['content'];
+            $data->$_POST['category'] = $arr;
+            logMessage('POST: Appended new content to existing category');
         }
 
         writeJsonProfile($data);
