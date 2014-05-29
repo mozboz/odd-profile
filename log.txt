@@ -1,5 +1,1 @@
 
-POST: Appended new content to new category
-GET: Profile sent in HTML
-POST: Appended new content to existing category
-GET: Profile sent in HTML
