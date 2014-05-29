@@ -20,15 +20,20 @@ Active Profile API
 
 {ProfileURL} is a root REST URL to which the below calls can be made
 
-GET   - receive entire copy of the profile at this address
-              
-POST    add a top level item to the profile
-GET     item
-
-
+* GET: receive entire copy of the profile at this address
+    * content-type header: choose mime-type of data to receive
+        * application/json : send in raw JSON
+        * text/html : pretty print HTML for browser (this is what you'll get if you browse to index.php)
+* POST: an item to the profile
+    * param 'category' [REQUIRED] : the category name to add an entry to
+    * param 'content' [REQUIRED] : the content to add to the specified category
+* Return data:
+    * 200 on success, 400 on bad params.
+    
 Install
 =======
 
-Install these files to e.g. yourserver.com/profile/ and ensure that your server has write access to the profile.txt file
+Install these files to e.g. yourserver.com/profile/ and ensure that your server has write access to the profile.json file.
 
-add.php is intended to be called by a remote server, not intended for viewing in the browser. Loading it in the browser will just insert an empty item in your profile.
+Test by browsing to editor.php and inserting a test content/category pair. This should be stored in profile.json and visible by browsing to index.php
+
