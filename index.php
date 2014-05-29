@@ -7,7 +7,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case 'GET':
         switch(true) {
 
-            case headerIsJson():
+            case headerIsOddProfile():
                 // Output raw JSON
                 echo file_get_contents(JSON_PROFILE_FILENAME);
 
@@ -25,6 +25,10 @@ switch ($_SERVER['REQUEST_METHOD']) {
                 logMessage('GET: Profile sent in HTML');
                 break;
 
+            default:
+                header('HTTP/1.1 400 Invalid Content Type');
+                logMessage('POST Error: content type not recognised');
+                break;
         }
         break;
 

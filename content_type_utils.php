@@ -1,7 +1,7 @@
 <?php
 
-function headerIsJson() {
-    $jsonHeaders = array('application/json', 'text/json');
+function headerIsOddProfile() {
+    $jsonHeaders = array('application/vnd.odd-profile.v1+json');
     return matchHeader($jsonHeaders);
 }
 
