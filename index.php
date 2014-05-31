@@ -35,6 +35,12 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
     case 'POST':
 
+        if (!headerIsOddProfile()) {
+            header('HTTP/1.1 400 Invalid Input');
+            logMessage('POST Error: content field not set');
+            exit(1);
+        }
+
         if (empty($_POST['content']) || empty($_POST['category'])) {
             header('HTTP/1.1 400 Invalid Input');
             logMessage('POST Error: content field not set');

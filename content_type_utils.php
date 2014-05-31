@@ -1,7 +1,8 @@
 <?php
+require_once('common.php');
 
 function headerIsOddProfile() {
-    $jsonHeaders = array('application/vnd.odd-profile.v1+json');
+    $jsonHeaders = array(ODD_PROFILE_MIME_TYPE. '.' . 'v' . ODD_PROFILE_VERSION . '+json');
     return matchHeader($jsonHeaders);
 }
 

@@ -16,8 +16,8 @@ $(document).ready(function() {
                 type: "POST",
                 url: "index.php",
                 data: dataString
-            }).done(function(msg) {
-                    alert( "success: " + msg);
+            }).done(function(data, textStatus, jqXHR) {
+                    alert( "success: " + data + " | " + jqXHR.status);
                 })
                 .fail(function() {
                     alert( "error" );
