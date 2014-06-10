@@ -1,5 +1,9 @@
 <?php
 
+$header = 'application/vnd.odd-profile.v456+json';
+$versionMatch = preg_match('~' . quotemeta('application/vnd.odd-profile') . '.' . 'v' . '(\d+)' . quotemeta('+json') . '~', $header, $matches);
+print_r($matches[1]);
+exit(0);
 // This is an experiment to see how easy it is to navigate
 // through a PHP object, creating objects/arrays along
 // the way.

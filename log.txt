@@ -1,1 +1,171 @@
 
+GET: Profile sent in HTML
+GET: Profile sent in HTML
+GET: Profile sent in HTML
+GET: Profile sent in HTML
+GET: Profile sent in HTML
+POST Error: content field not set
+POST Error: content field not set
+POST Error: content field not set
+POST Error: content field not set
+POST Error: content field not set
+POST Error: content field not set
+POST Error: content field not set
+0
+POST Error: content field not set
+0
+POST Error: content field not set
+0
+POST Error: header not recognised
+0
+POST Error: header not recognised
+0
+POST Error: header not recognised
+0
+POST Error: header not recognised
+0
+POST Error: header not recognised
+got header */*
+POST Error: header not recognised
+got header */*
+POST Error: header not recognised
+got header Foo
+POST Error: header not recognised
+got header application/vnd.odd-profile.v1+json
+POST Error: header not recognised
+got header application/vnd.odd-profile.v2+json
+got header application/vnd.odd-profile.v2+json
+got header application/vnd.odd-profile.v2+json
+POST Error: url field not set
+got header application/vnd.odd-profile.v2+json
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+GET: Profile sent in HTML
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+GET Error: aa1 context type not recognised
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+GET Error: aa1 context type not recognised
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+GET: 1 Profile sent in HTML
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+GET Error: 2 context type not recognised
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+GET Error: 2 context type not recognised
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+GET: 1 Profile sent in HTML
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+GET:  Profile sent in HTML
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+got header text/html
+got header text/html
+got header application/xhtml+xml
+got header application/xml;q=0.9
+got header image/webp
+got header */*;q=0.8
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET: 1 Profile sent in HTML
+GET:  Profile sent in HTML
+GET Error: foo/bar context type not recognised
+GET: 1 Profile sent in HTML
+GET:  Profile sent in HTML
+POST Error: name field not set
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+POST Error: Tried to create existing context at /
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+POST Error: key field not set
+PUT Error: key field not set
+PUT Error: key field not set
+Array
+PUT Error: key field not set
+
+PUT Error: key field not set
+Array
+PUT Error: key field not set
+foo
+PUT Error: key field not set
+GET:  Profile sent in HTML
+foo
+foo
+foo
+foo
+GET:  Profile sent in HTML
+foo
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+foo2
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
+GET:  Profile sent in HTML
