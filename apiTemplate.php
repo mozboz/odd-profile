@@ -14,6 +14,9 @@ class api_config{
         'requiredVariables' => array('POST' => array('url', 'owner', 'type', 'name'),
                                         'PUT' => array('key', 'value')),
 
+        // Name of the content node
+        'contentNode' => 'content',
+
         // If you want to use a key overwrite function, set it here, and definte it below!
         'overwriteKeyFunction' => 'overwriteKey'
     );
