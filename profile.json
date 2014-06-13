@@ -1,1 +1,1 @@
-{"posts":["{\"title\": \"foo\", \"url\": \"url\"}","blahblah","asdasd","asdasd4444","popo4"]}
+{"foo":{"content":{"a":"b","b":"c"},"url":"url","owner":"owner","type":"type","name":"name"},"food":{"content":{},"url":"url","owner":"owner","type":"type","name":"name"},"\/":{"content":{},"url":"url","owner":"owner","type":"type","name":"name"},"foo\/bar":{"content":{},"url":"url","owner":"owner","type":"type","name":"name"}}
